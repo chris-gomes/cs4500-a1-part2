@@ -44,7 +44,7 @@ void test_equals() {
     printf("Test equals: ");
     String* str1 = new String("Hello");
     String* str2 = new String("Hello");
-    t_true(str1->equals(str2)));
+    t_true(str1->equals(str2));
 }
 
 void test_hash() {
