@@ -89,7 +89,7 @@ void test_index_of() {
     l1->append(t);
 
     printf("Test index_of (in array): ");
-    t_true(l1->index_of(new String("Hello")) == 1);
+    t_true(l1->index_of(new String("Hello")) == 0);
 
     printf("Test index_of (not in array): ");
     t_true(l1->index_of(new String("NotIn")) == -1);
