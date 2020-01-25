@@ -61,7 +61,7 @@ class Array : public Object {
 
     /**
      * Removes the element at the given index. If invalid index,
-     * does nothing and returns a default item.
+     * does nothing and returns a null pointer.
      * @arg i  index to remove from
      * @return removed element
      */
