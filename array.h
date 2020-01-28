@@ -33,6 +33,13 @@ class Array : public Object {
     void append_array(Array* c);
 
     /**
+     * Adds an item at a specific index in the Array
+     * @arg i  position to add the new item
+     * @arg o  the new item
+     */
+    void add(size_t i, Object* o);
+
+    /**
      * Removes all elements from the array.
      */
     void clear();
