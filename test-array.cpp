@@ -38,7 +38,7 @@ void test_append_array() {
     Array* l3 = new Array();
     l3->append(l1);
     t_true(l3->equals(l1));
-    
+
     printf("Test append (not empty): ");
     Array* l2 = new Array();
     String* u = new String("Hi");
@@ -47,6 +47,18 @@ void test_append_array() {
     l2->append(v);
     l1->append_array(l2);
     t_true(l1->get(2)->equals(u) && l1->get(3)->equals(v) && l1->size() == 4);
+}
+
+void test_add() {
+    Array* l1 = new Array();
+    String* s = new String("Hello");
+    String* t = new String("World");
+    String* u = new String("Hi");
+    l1->add(0, s);
+    l1->add(1, t);
+    l1->add(1, u);
+    t_true(l1->get(0)->equals(s) && l1->get(1)->equals(u) && l1->get(2)->equals(t) &&
+           l1->size() == 3);
 }
 
 void test_clear() {
