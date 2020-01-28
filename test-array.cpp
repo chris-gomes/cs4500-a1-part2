@@ -54,11 +54,9 @@ void test_add() {
     String* s = new String("Hello");
     String* t = new String("World");
     String* u = new String("Hi");
-    l1->add(0, s);
-    l1->add(1, t);
-    l1->add(1, u);
-    t_true(l1->get(0)->equals(s) && l1->get(1)->equals(u) && l1->get(2)->equals(t) &&
-           l1->size() == 3);
+    l1->append(s);
+    l1->add(0, t);
+    t_true(l1->get(0)->equals(t) && l1->get(1)->equals(s) && l1->size() == 2);
 }
 
 void test_clear() {
