@@ -60,7 +60,7 @@ class Array : public Object {
 
     /**
      * Gets the index of the element given. If not in list,
-     * returns a -1.
+     * returns a number > size().
      * @arg o  element to find in the list
      * @return index of the element if found
      */
