@@ -13,7 +13,7 @@ class Array : public Object {
      * Creates an empty array.
      * @return the array
      */
-    Array();
+    Array() : Object() {}
 
     /**
      * Deconstructs an instance of array.
@@ -107,7 +107,7 @@ class IntArray : public Object {
      * Creates an empty array.
      * @return the array
      */
-    IntArray();
+    IntArray() : Object() {}
 
     /**
      * Deconstructs an instance of array.
@@ -201,7 +201,7 @@ class FloatArray : public Object {
      * Creates an empty array.
      * @return the array
      */
-    FloatArray();
+    FloatArray() : Object() {}
 
     /**
      * Deconstructs an instance of array.
@@ -295,7 +295,7 @@ class BoolArray : public Object {
      * Creates an empty array.
      * @return the array
      */
-    BoolArray();
+    BoolArray() : Object() {}
 
     /**
      * Deconstructs an instance of array.
