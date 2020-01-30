@@ -150,7 +150,7 @@ class IntArray : public Object {
      * @arg index  index of the element to get
      * @return element at the index
      */
-    Object* get(size_t index);
+    int get(size_t index);
 
     /**
      * Gets the index of the element given. If not in list,
@@ -166,7 +166,7 @@ class IntArray : public Object {
      * @arg i  index to remove from
      * @return removed element
      */
-    Object* remove(size_t i);
+    int remove(size_t i);
 
     /**
      * Replaces the element at the index with given one. If
@@ -175,7 +175,7 @@ class IntArray : public Object {
      * @arg e  element to replace with
      * @return replaced element
      */
-    Object* set(size_t i, int e);
+    int set(size_t i, int e);
 
     /**
      * Gets the size of the array.
@@ -244,7 +244,7 @@ class FloatArray : public Object {
      * @arg index  index of the element to get
      * @return element at the index
      */
-    Object* get(size_t index);
+    float get(size_t index);
 
     /**
      * Gets the index of the element given. If not in list,
@@ -260,7 +260,7 @@ class FloatArray : public Object {
      * @arg i  index to remove from
      * @return removed element
      */
-    Object* remove(size_t i);
+    float remove(size_t i);
 
     /**
      * Replaces the element at the index with given one. If
@@ -269,7 +269,7 @@ class FloatArray : public Object {
      * @arg e  element to replace with
      * @return replaced element
      */
-    Object* set(size_t i, float e);
+    float set(size_t i, float e);
 
     /**
      * Gets the size of the array.
@@ -338,7 +338,7 @@ class BoolArray : public Object {
      * @arg index  index of the element to get
      * @return element at the index
      */
-    Object* get(size_t index);
+    bool get(size_t index);
 
     /**
      * Gets the index of the element given. If not in list,
@@ -354,7 +354,7 @@ class BoolArray : public Object {
      * @arg i  index to remove from
      * @return removed element
      */
-    Object* remove(size_t i);
+    bool remove(size_t i);
 
     /**
      * Replaces the element at the index with given one. If
@@ -363,7 +363,7 @@ class BoolArray : public Object {
      * @arg e  element to replace with
      * @return replaced element
      */
-    Object* set(size_t i, bool e);
+    bool set(size_t i, bool e);
 
     /**
      * Gets the size of the array.
