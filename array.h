@@ -1,6 +1,6 @@
 #pragma once
 #include <stdio.h>
-#include "Object.h"
+#include "object.h"
 
 /**
  * Array: Represents a resizeable array.

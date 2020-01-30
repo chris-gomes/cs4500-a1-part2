@@ -1,4 +1,3 @@
-#pragma once
 #include <stdio.h>
 #include "array.h"
 #include "string.h"
