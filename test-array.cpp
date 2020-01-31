@@ -140,6 +140,8 @@ void test_append_array() {
 
     delete s;
     delete t;
+    delete s2;
+    delete t2;
     delete l1;
     delete l2;
     delete l3;
@@ -311,11 +313,13 @@ void test_index_of() {
     BoolArray *l4 = new BoolArray();
     l4->append(true);
 
+    String *hello = new String("Hello");
+    String *notIn = new String("NotIn");
     printf("Test index_of for string (in array): ");
-    t_true(l1->index_of(new String("Hello")) == 0);
+    t_true(l1->index_of(hello) == 0);
 
     printf("Test index_of for string (not in array): ");
-    t_true(l1->index_of(new String("NotIn")) == 3);
+    t_true(l1->index_of(notIn) == 3);
 
     printf("Test index_of for int (in array): ");
     t_true(l2->index_of(13) == 0);
@@ -341,6 +345,8 @@ void test_index_of() {
     delete l2;
     delete l3;
     delete l4;
+    delete hello;
+    delete notIn;
 }
 
 void test_remove() {
